@@ -3,7 +3,7 @@ var express = require('express');
 var os = require("os");
 var app = express();
 console.log("express created");
-app.use(express.static(path.join(__dirname, 'web')));
+app.use(express.static(path.join(__dirname, 'src')));
 console.log("getting index.html");
 
 app.get('/', function(req, res){
